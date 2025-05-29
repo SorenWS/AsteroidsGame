@@ -74,7 +74,6 @@ public class CollisionDetector implements IPostEntityProcessingService {
                             continue;
                         }
                     }
-                    // (reverse direction already handled above)
                     // everything else just dies (player hits asteroid, etc)
                     else {
                         toRemove.add(entity1);
