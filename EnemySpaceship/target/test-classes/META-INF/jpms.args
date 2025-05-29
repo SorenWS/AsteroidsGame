@@ -1,0 +1,4 @@
+--patch-module
+EnemySpaceship=_
+--add-reads
+EnemySpaceship=ALL-UNNAMED

@@ -1,0 +1,4 @@
+--patch-module
+CommonPlayer=_
+--add-reads
+CommonPlayer=ALL-UNNAMED
