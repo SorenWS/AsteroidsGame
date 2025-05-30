@@ -84,7 +84,7 @@ public class EnemySpaceshipControlSystem implements IEntityProcessingService {
             enemy.setX(enemy.getX() + moveX * MOVE_SPEED);
             enemy.setY(enemy.getY() + moveY * MOVE_SPEED);
 
-            // Screen wrap
+            // wrap screen
             if (enemy.getX() < 0) enemy.setX(gameData.getDisplayWidth() - 1);
             if (enemy.getX() > gameData.getDisplayWidth()) enemy.setX(1);
             if (enemy.getY() < 0) enemy.setY(gameData.getDisplayHeight() - 1);

@@ -14,7 +14,6 @@ class CollisionDetectorTest {
 
     @Test
     void testPlayerAsteroidCollisionRemovesBoth() {
-        // Arrange
         GameData gameData = new GameData();
         World world = new World();
 
@@ -25,7 +24,7 @@ class CollisionDetectorTest {
         player.setRadius(10);
 
         Entity asteroid = new Asteroid();
-        asteroid.setX(105); // within sum of radii = 20
+        asteroid.setX(105);
         asteroid.setY(100);
         asteroid.setRadius(10);
 
@@ -34,10 +33,8 @@ class CollisionDetectorTest {
 
         CollisionDetector detector = new CollisionDetector();
 
-        // Act
         detector.process(gameData, world);
 
-        // Assert
         assertFalse(world.getEntities().contains(player), "Player should be removed on collision.");
         assertFalse(world.getEntities().contains(asteroid), "Asteroid should be removed on collision.");
     }

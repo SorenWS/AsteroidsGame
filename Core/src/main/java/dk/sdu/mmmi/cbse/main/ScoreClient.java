@@ -3,7 +3,6 @@ package dk.sdu.mmmi.cbse.main;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import java.util.Collections;
 import java.util.Map;
 
 @Component
@@ -17,23 +16,14 @@ public class ScoreClient {
         this.restTemplate = restTemplate;
     }
 
-    /**
-     * Adds points to the score by calling the scoring microservice.
-     * @param amount Amount to increment the score by (e.g., 100 for asteroid, 250 for enemy)
-     */
     public void addScore(int amount) {
         try {
-            // POST to /score/increment?amount=X (no body needed)
             restTemplate.postForObject(scoringServiceUrl + "?amount=" + amount, null, Void.class);
         } catch (Exception e) {
-            // For robustness, don't crash the game if the microservice is down.
             System.out.println("[WARN] Could not update score via microservice: " + e.getMessage());
         }
     }
 
-    /**
-     * Optionally: Get the current score (not strictly needed, but sometimes handy)
-     */
     public int getScore() {
         try {
             Map response = restTemplate.getForObject("http://localhost:8080/score", Map.class);
@@ -43,6 +33,6 @@ public class ScoreClient {
         } catch (Exception e) {
             System.out.println("[WARN] Could not read score from microservice: " + e.getMessage());
         }
-        return -1; // Indicate error
+        return -1;
     }
 }

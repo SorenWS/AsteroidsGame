@@ -20,7 +20,6 @@ public class ScoringController {
         this.score = payload.getOrDefault("score", 0);
     }
 
-    // For demonstration, you can also increment score
     @PostMapping("/score/increment")
     public void incrementScore(@RequestParam(value = "amount", defaultValue = "1") int amount) {
         this.score += amount;

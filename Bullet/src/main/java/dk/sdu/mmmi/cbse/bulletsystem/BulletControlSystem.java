@@ -23,7 +23,7 @@ public class BulletControlSystem implements IEntityProcessingService, BulletSPI 
             bullet.setX(bullet.getX() + changeX * 6); // Faster laser
             bullet.setY(bullet.getY() + changeY * 6);
 
-            // Remove bullet if out of screen bounds
+            // Remove bullet if out of bounds
             if (bullet.getX() < 0 || bullet.getX() > width || bullet.getY() < 0 || bullet.getY() > height) {
                 world.removeEntity(bullet);
             }
@@ -35,11 +35,11 @@ public class BulletControlSystem implements IEntityProcessingService, BulletSPI 
         Entity bullet = new Bullet();
         Random rand = new Random();
 
-        // Variable spread
+        // Slight spread when shooting
         double spread = (rand.nextDouble() * 2) - 1;
         double angle = shooter.getRotation() + spread;
 
-        // Laser bolt shape
+        // Star wars "Laser bolt" shape
         bullet.setPolygonCoordinates(
                 3, -1,   // top right
                 3, 1,    // bottom right
@@ -54,11 +54,11 @@ public class BulletControlSystem implements IEntityProcessingService, BulletSPI 
         bullet.setRotation(angle);
         bullet.setRadius(2); //bullet width
 
-        // Laser color: green for enemy, red for player
+        // Bullet color: green for enemy, red for player
         if (shooter instanceof Enemy) {
-            bullet.getProperties().put("color", "#22ff22"); // Bright green
+            bullet.getProperties().put("color", "#22ff22"); // green
         } else {
-            bullet.getProperties().put("color", "#ff3333"); // Bright red
+            bullet.getProperties().put("color", "#ff3333"); // red
         }
 
         return bullet;

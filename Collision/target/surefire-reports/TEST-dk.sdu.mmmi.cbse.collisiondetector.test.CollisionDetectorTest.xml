@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dk.sdu.mmmi.cbse.collisiondetector.test.CollisionDetectorTest" time="0.037" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dk.sdu.mmmi.cbse.collisiondetector.test.CollisionDetectorTest" time="0.03" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DK"/>
     <property name="sun.boot.library.path" value="/Users/sorenstilling/.sdkman/candidates/java/21.0.1-oracle/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/sorenstilling/Documents/Uni/4Semester/KBS/CBS_Asteroids/Collision/target/surefire 2025-05-30T16-37-08_407-jvmRun1 surefire-20250530163714034_4tmp surefire_1-20250530163714034_5tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/sorenstilling/Documents/Uni/4Semester/KBS/CBS_Asteroids/Collision/target/surefire 2025-05-30T16-50-43_274-jvmRun1 surefire-20250530165047905_4tmp surefire_1-20250530165047905_5tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/sorenstilling/Documents/Uni/4Semester/KBS/CBS_Asteroids/Collision/target/test-classes:/Users/sorenstilling/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/sorenstilling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/sorenstilling/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sorenstilling/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/sorenstilling/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sorenstilling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/sorenstilling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/sorenstilling/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/sorenstilling/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/sorenstilling/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/sorenstilling/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/sorenstilling/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/sorenstilling/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/sorenstilling/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-mac-aarch64.jar:/Users/sorenstilling/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/sorenstilling/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/sorenstilling/.m2/repository/org/springframework/spring-aop/5.3.32/spring-aop-5.3.32.jar:/Users/sorenstilling/.m2/repository/org/springframework/spring-expression/5.3.32/spring-expression-5.3.32.jar:/Users/sorenstilling/.m2/repository/org/springframework/spring-jcl/5.3.32/spring-jcl-5.3.32.jar:"/>
@@ -58,5 +58,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testPlayerAsteroidCollisionRemovesBoth" classname="dk.sdu.mmmi.cbse.collisiondetector.test.CollisionDetectorTest" time="0.029"/>
+  <testcase name="testPlayerAsteroidCollisionRemovesBoth" classname="dk.sdu.mmmi.cbse.collisiondetector.test.CollisionDetectorTest" time="0.023"/>
 </testsuite>
