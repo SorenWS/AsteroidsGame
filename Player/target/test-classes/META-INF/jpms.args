@@ -1,0 +1,4 @@
+--patch-module
+Player=_
+--add-reads
+Player=ALL-UNNAMED

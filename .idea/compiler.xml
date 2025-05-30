@@ -12,6 +12,7 @@
         <module name="Asteroids" />
         <module name="Collision" />
         <module name="CommonAsteroids" />
+        <module name="ScoringService" />
         <module name="CommonBullet" />
         <module name="Common" />
         <module name="Core" />
@@ -19,5 +20,13 @@
         <module name="CommonPlayer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ScoreService" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ScoreService" options="" />
+    </option>
   </component>
 </project>

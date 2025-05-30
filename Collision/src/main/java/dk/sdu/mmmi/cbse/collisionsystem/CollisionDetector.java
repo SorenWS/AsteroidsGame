@@ -58,7 +58,7 @@ public class CollisionDetector implements IPostEntityProcessingService {
                         toRemove.add(entity2);
                         toRemove.add(entity1);
                     }
-                    // enemy bullet hits player, only do damage once per collision!
+                    // enemy bullet hits player, only do damage once per collision
                     else if (entity1IsPlayer && entity2IsBullet) {
                         boolean fromEnemy = Boolean.TRUE.equals(entity2.getProperties().get("fromEnemy"));
                         if (fromEnemy) {
@@ -74,7 +74,6 @@ public class CollisionDetector implements IPostEntityProcessingService {
                             continue;
                         }
                     }
-                    // everything else just dies (player hits asteroid, etc)
                     else {
                         toRemove.add(entity1);
                         toRemove.add(entity2);
@@ -90,7 +89,7 @@ public class CollisionDetector implements IPostEntityProcessingService {
     }
 
     private boolean collides(Entity entity1, Entity entity2) {
-        // really basic circle collision
+        // basic circle collision
         float dx = (float) entity1.getX() - (float) entity2.getX();
         float dy = (float) entity1.getY() - (float) entity2.getY();
         float distance = (float) Math.sqrt(dx * dx + dy * dy);

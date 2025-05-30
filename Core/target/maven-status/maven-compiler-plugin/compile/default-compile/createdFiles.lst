@@ -1,3 +1,7 @@
-module-info.class
-dk/sdu/mmmi/cbse/main/Main$1.class
 dk/sdu/mmmi/cbse/main/Main.class
+dk/sdu/mmmi/cbse/main/Game$1.class
+dk/sdu/mmmi/cbse/main/ScoreClient.class
+module-info.class
+dk/sdu/mmmi/cbse/main/ScoreResponse.class
+dk/sdu/mmmi/cbse/main/Game.class
+dk/sdu/mmmi/cbse/main/ModuleConfig.class
