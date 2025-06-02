@@ -9,7 +9,7 @@ import java.util.Map;
 public class ScoreClient {
 
     private final RestTemplate restTemplate;
-    private final String scoringServiceUrl = "http://localhost:8080/score/increment";
+    private final String scoringServiceUrl = "http://localhost:8080/score";
 
     @Autowired
     public ScoreClient(RestTemplate restTemplate) {
